@@ -1,0 +1,2 @@
+python mean_mapper.py < AB_NYC_2019.csv | python mean_reducer.py
+python var_mapper.py < AB_NYC_2019.csv | python var_reducer.py

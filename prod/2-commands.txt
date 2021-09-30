@@ -1,0 +1,29 @@
+Блок 2.1
+
+1. hdfs dfs -mkdir -p /home
+2. hdfs dfs -mkdir -p /home/user
+3. это обычная папка-корзина для удаленных файлов с возможностью их восстановления, -skipTrash - для безвозвратного удаления
+4. hdfs dfs -touchz /home/user/empty.file
+5. hdfs dfs -rm -skipTrash /home/user/empty.file
+6. hdfs dfs -rm -skipTrash -R /home
+
+
+Блок 2.2
+
+1. sudo docker cp test.txt namenode:/
+   hdfs dfs -mkdir -p /test
+   hdfs dfs -put test.txt /test
+2. hdfs dfs -cat /test/test.txt
+3. hdfs dfs -tail /test/test.txt
+4. hdfs dfs -cat /test/test.txt | head -n 2
+5. hdfs dfs -cp /test/test.txt /
+
+
+Блок 2.3
+
+1. hdfs dfs -setrep -w 1 /test.txt
+   hdfs dfs -setrep -w 3 /test.txt
+У меня время на увеличение и уменьшение фактора заняло примерно одинаковое время - 7с.
+2. hadoop fsck /test -files -blocks -locations
+3. hadoop fsck -blockId blk_1073741846
+
