@@ -1,0 +1,31 @@
+SELECT artist, max(scrobbles) AS scrobbles FROM (
+    SELECT lower(trim(tag)) AS tag, COUNT(*) AS cnt
+    FROM artists
+    LATERAL VIEW explode(split(tags_lastfm, ";")) col AS tag
+    WHERE tag != ""
+    GROUP BY lower(trim(tag))
+    SORT BY cnt DESC
+    LIMIT 10) AS top_tags
+JOIN (
+    SELECT artist_lastfm AS artist, scrobbles_lastfm AS scrobbles, tag
+    FROM artists
+    LATERAL VIEW explode(split(tags_lastfm, ";")) col AS tag
+) AS artists ON top_tags.tag == artists.tag
+GROUP BY artist
+SORT BY CAST(scrobbles AS INT) DESC
+LIMIT 10
+
+
+---------------------------------
+
+    artist | scrobbles
+1	Radiohead	 | 499548797
+2	Coldplay	 | 360111850
+3	Linkin Park	 | 294986508
+4	Red Hot Chili Peppers	 | 293784041
+5	Lady Gaga	 | 285469647
+6	Lana Del Rey	 | 217157209
+7	Daft Punk	 | 209502122
+8	The Killers	 | 208722092
+9	Britney Spears	 | 201961724
+10	Rihanna	 | 199248986

@@ -1,0 +1,18 @@
+SELECT
+    artist_lastfm, 
+    scrobbles_lastfm, 
+    COUNT(*) AS tag_cnt
+FROM artists
+LATERAL VIEW explode(split(tags_lastfm, ";")) col AS tag
+WHERE tag != ""
+GROUP BY artist_lastfm, scrobbles_lastfm
+SORT BY tag_cnt DESC, scrobbles_lastfm DESC
+LIMIT 3
+
+
+---------------------------------
+
+ 	artist_lastfm	| scrobbles_lastfm	| tag_cnt
+1	Karma	| 425046	| 2600
+2	Angel	| 586510	| 2200
+3	Eden	| 3943027	| 2200

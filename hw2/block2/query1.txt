@@ -1,0 +1,10 @@
+SELECT 
+    max(struct(CAST(scrobbles_lastfm AS INT), artist_mb)).col2 AS artist,
+    max(struct(CAST(scrobbles_lastfm AS INT), artist_mb)).col1 AS scrobbles
+FROM artists
+
+
+---------------------------------
+
+    artist | scrobbles
+    The Beatles | 517126254

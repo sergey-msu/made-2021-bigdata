@@ -1,0 +1,14 @@
+SELECT
+    lower(trim(tag)) AS tag, 
+    COUNT(*) AS cnt
+FROM artists
+LATERAL VIEW explode(split(tags_lastfm, ";")) col AS tag
+WHERE tag != ""
+GROUP BY lower(trim(tag))
+SORT BY cnt DESC
+LIMIT 1
+
+
+---------------------------------
+    tag | cnt
+    seen live | 99705
