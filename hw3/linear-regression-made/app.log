@@ -1,0 +1,88 @@
+Oct 19, 2021 6:08:55 PM linearRegression.Main$ main
+INFO: Load data from: src/data/student_train.csv...
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Load data from: src/data/student_test.csv...
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Load data success
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Splitting data into 3 train chunks...
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Fitting model...
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ $anonfun$main$1
+INFO:   > fitting model #1...
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 0, RMSE=4.70
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 10, RMSE=3.80
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 20, RMSE=3.51
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 30, RMSE=3.44
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 40, RMSE=3.42
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 50, RMSE=3.42
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 60, RMSE=3.41
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 70, RMSE=3.41
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 80, RMSE=3.41
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #1, epoch: 90, RMSE=3.41
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ $anonfun$main$1
+INFO:   > validating model #1: RMSE=3.07
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ $anonfun$main$1
+INFO:   > fitting model #2...
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 0, RMSE=4.78
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 10, RMSE=3.86
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 20, RMSE=3.57
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 30, RMSE=3.50
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 40, RMSE=3.48
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 50, RMSE=3.48
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 60, RMSE=3.47
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 70, RMSE=3.47
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 80, RMSE=3.47
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #2, epoch: 90, RMSE=3.47
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ $anonfun$main$1
+INFO:   > validating model #2: RMSE=2.98
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ $anonfun$main$1
+INFO:   > fitting model #3...
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 0, RMSE=4.82
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 10, RMSE=3.96
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 20, RMSE=3.69
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 30, RMSE=3.62
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 40, RMSE=3.60
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 50, RMSE=3.60
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 60, RMSE=3.60
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 70, RMSE=3.59
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 80, RMSE=3.59
+Oct 19, 2021 6:08:56 PM linearRegression.LinearRegression $anonfun$fit$3
+INFO:     > model #3, epoch: 90, RMSE=3.59
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ $anonfun$main$1
+INFO:   > validating model #3: RMSE=2.74
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Apply CV scoring...
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Save predictions to file...
+Oct 19, 2021 6:08:56 PM linearRegression.Main$ main
+INFO: Done!
