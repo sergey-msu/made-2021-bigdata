@@ -9,18 +9,6 @@ case class CrossValChunk(X: DenseMatrix[Double], y: DenseVector[Double]) {
 
 class CrossValData(chunks: Array[CrossValChunk]) {
   def getTrainFor(k: Int): CrossValChunk = {
-//    var result = None: Option[DenseMatrix[Double]]
-//    for (i <- chunks.indices) {
-//      if (i != k) {
-//        if (result.isDefined) {
-//          result = DenseMatrix.vertcat(result.get, chunks(i).X)
-//        } else {
-//          result = Some(chunks(i).X)
-//        }
-//      }
-//
-//    }
-
     val cvChunksX = new Array[DenseMatrix[Double]](chunks.length - 1)
     val cvChunksY = new Array[DenseVector[Double]](chunks.length - 1)
     var c = 0
