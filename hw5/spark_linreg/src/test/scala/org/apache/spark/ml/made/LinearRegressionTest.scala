@@ -30,7 +30,7 @@ class LinearRegressionTest extends AnyFlatSpec with should.Matchers with WithSpa
   }
 
   "Estimator" should "correct fit" in {
-    val df: DataFrame = generateTestData(100, 9)
+    val df: DataFrame = generateTestData(100000, 9)
 
     val lr = new LinearRegression()
       .setFeaturesCol("x")
