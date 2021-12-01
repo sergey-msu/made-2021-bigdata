@@ -24,10 +24,6 @@ trait LinearRegressionParams extends PredictorParams
     this,
     "lr",
     "Regression learning rate")
-  val batchSize: IntParam = new IntParam(
-    this,
-    "batchSize",
-    "Regression learning batch size")
 
   def setIters(value: Int): this.type = set(iters, value)
   def setLearningRate(value: Double): this.type = set(lr, value)
@@ -35,7 +31,7 @@ trait LinearRegressionParams extends PredictorParams
   def setLabelCol(value: String): this.type = set(labelCol, value)
   def setPredictionCol(value: String): this.type = set(predictionCol, value)
 
-  setDefault(iters -> 100, lr -> 0.1, batchSize -> 32)
+  setDefault(iters -> 100, lr -> 0.1)
 
   protected def validateAndTransformSchema(schema: StructType): StructType = {
     SchemaUtils.checkColumnType(schema, getFeaturesCol, new VectorUDT())
